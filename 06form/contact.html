@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lucy Brown">
+    <meta name="description" content="Overview of poster artwork">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="graphicdesign.css">
+    <title>Lucy Brown - Graphic Design: Posters</title>
+</head>
+
+<body>
+    <!--start the page head-->
+    <header>
+        <span>Lucy Brown - Graphic Design</span>
+    </header>
+
+    <!--start the page navigation-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Posters</a></li>
+            <li><a href="about.html">About the Artist</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li class="active"><a href="contact.html">Contact the Designer</a></li>
+        </ul>
+
+    </nav>
+    <!--start the main content-->
+    <main>
+        <h1>Contact the Designer</h1>
+        <h2> Commission Form</h2>
+
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+            <legend>Contact Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="Lname" required></label>
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="907-555-1234"></label>
+            <label>Email Address*<input type="email" name="email" required></label>
+            
+            </fieldset>
+    
+            <fieldset>
+                <legend>What use will your commissioned designs be for?</legend>
+                <label><input type="radio" name="method" value="Personal">Personal Use</label> 
+                <label><input type="radio" name="method" value="Business">Business Use</label> 
+                <label><input type="radio" name="method" value="Other">Other</label> 
+
+                <label>Design Deadline
+                    <select name="deadline">
+                    <option value="none">Please Select</option>
+                    <option value="1-2 weeks">Between 1-2 weeks</option>
+                    <option value="2-4 weeks">Between 2-4 weeks</option>
+                    <option value="1-2 months">Between 1-2 months</option>
+                    <option value="3-4 months">Between 3-4 months</option>
+                    <option value="4+ months">Between 4-5 plus months</option>
+                    </select>
+                </label>
+            </fieldset>
+    
+            <fieldset>
+            <legend>Type of project(s)</legend>
+                <label><input type="checkbox" name="poster" value="chosen">Poster</label>
+                <label><input type="checkbox" name="Logo" value="chosen">Logo</label>
+                <label><input type="checkbox" name="Bookcover" value="chosen">Bookcover</label>
+                <label><input type="checkbox" name="Magazine" value="chosen">Magazine</label>
+                <label><input type="checkbox" name="Other" value="chosen">Other</label>
+              </fieldset>
+    
+              <Label>Project Description
+                <textarea name="comments"></textarea>
+              </Label>
+    
+    
+    
+    
+    
+    
+            <input type="submit" value="Send Commission Request">
+            </form>
+
+    </main>
+
+    <!--start the page footer-->
+    <footer>
+        <p>&copy; 2025 &bull; Lucy Brown &bull; Web Essentials</p>
+    </footer>
+
+</body>
+
+</html>
